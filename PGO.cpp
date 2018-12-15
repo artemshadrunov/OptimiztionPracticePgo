@@ -1,8 +1,6 @@
-#include <iostream>
 #include <random>
-#include <fstream>
 
-const int LENGTH = 100000;
+const int LENGTH = 110000000;
 
 typedef struct {
 	long len;
@@ -27,7 +25,7 @@ my_vector v = { LENGTH, a };
 
 int main() {
 	double res;
-	for (int i = 0; i < LENGTH; i++)  // инициализация вектора случайными числами
+	for (int i = 0; i < LENGTH; i++)
 		a[i] = rand();
 
 	foo_bar(&v, &res);
